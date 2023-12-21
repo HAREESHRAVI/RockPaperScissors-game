@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <div class="button-holder">
+      <button
+        class="button-style"
+        onclick="computerMove=pickComputerMove();playGame('Rock')"
+      >
+        <img src="images/Rock.jpeg" class="img-icon" alt="Rock" />
+      </button>
+      <button
+        class="button-style"
+        onclick="computerMove=pickComputerMove();playGame('Paper')"
+      >
+        <img src="images/paper.jpeg" class="img-icon" alt="Paper" />
+      </button>
+      <button
+        class="button-style"
+        onclick="computerMove=pickComputerMove();playGame('Scissors')"
+      >
+        <img src="images/scissors.jpeg" class="img-icon" alt="Scissors" />
+      </button>
+    </div>
+    <p class="js-score score-style"></p>
+    <p class="js-result result-style"></p>
+    <p class="js-moves moves-style"></p>
+    <div class="align-reset_button">
+      <button
+        class="reset_button-style"
+        onclick="resetScore();alert('Score has been reset');"
+      >
+        Reset score
+      </button>
+    </div>
+    <script src="demo.js"></script>
+  </body>
+</html>
