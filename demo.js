@@ -4,6 +4,22 @@ let score = JSON.parse(localStorage.getItem("score")) || {
     ties: 0,
   };
   displayScore();
+let isautoPlay = false;
+  let setIntervalId;
+  function autoPlay() {
+    if (isautoPlay==false){
+    setIntervalId=setInterval(function(){
+      const playerMove = pickComputerMove();
+      playGame(playerMove);
+    },1000);
+    isautoPlay = true;
+  }
+    else{
+        clearInterval(setIntervalId);
+        isautoPlay = false;
+    }
+  }
+
 
   function playGame(playerMove) {
     let result = "";
