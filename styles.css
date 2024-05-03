@@ -1,6 +1,5 @@
 body {
   font: Arial;
-  background-color: white;
 }
 .container {
   position: absolute;
@@ -19,7 +18,7 @@ body {
   height: 100px;
   margin: 0 auto;
   display: block;
-  border-radius: 60px;
+  border-radius: 50%;
 }
 .button-style {
   border-radius: 50%;
@@ -37,6 +36,7 @@ body {
 .autoplay-button {
   border: none;
   background-color: black;
+  border-radius: 20px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -59,4 +59,21 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+@media only screen and (max-width: 740px) {
+  .container {
+    width: 100vw;
+    align-items: center;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .button-style {
+    margin: 20px;
+  }
+  .img-icon {
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+  }
 }
