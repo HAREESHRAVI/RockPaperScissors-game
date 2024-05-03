@@ -1,6 +1,13 @@
 body {
   font: Arial;
 }
+html {
+  background-image: url("/images/rps-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
 .container {
   position: absolute;
   top: 50%;
