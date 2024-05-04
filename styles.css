@@ -26,6 +26,7 @@ html {
   margin: 0 auto;
   display: block;
   border-radius: 50%;
+  cursor: pointer;
 }
 .button-style {
   border-radius: 50%;
