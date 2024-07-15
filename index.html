@@ -35,7 +35,12 @@
       <div class="align-reset_button">
         <button
           class="reset_button-style"
-          onclick="resetScore();alert('Score has been reset');"
+          onclick="resetScore();
+          Swal.fire({
+              text: 'Your Score has been reset !!!',
+              icon: 'info',
+              confirmButtonText: 'OK'
+          })"
         >
           Reset score
         </button>
@@ -43,5 +48,6 @@
       </div>
     </div>
     <script src="demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
